@@ -216,3 +216,32 @@ a{color:inherit;text-decoration:none}
   .exh__img{height:220px}
   .pagehead{padding:120px 0 10px}
 }
+
+.linger{position:relative;background:var(--naval);color:#fff;min-height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:140px 32px 100px}
+.linger__center{position:relative;z-index:3;text-align:center;max-width:760px}
+.linger__center .eyebrow{color:var(--coral)}
+.linger__title{font-family:"EB Garamond",Georgia,serif;font-weight:500;font-size:clamp(2.6rem,7vw,5.6rem);line-height:1.02;letter-spacing:.01em;text-transform:uppercase;margin:22px 0 8px}
+.linger__title em{font-style:italic;text-transform:none;color:var(--coral)}
+.linger__title .shift{display:block;transform:translateX(6%)}
+.linger__center p.sub{color:rgba(255,255,255,.75);font-size:.95rem;max-width:52ch;margin:18px auto 0}
+.linger__mails{margin-top:38px;display:flex;flex-direction:column;gap:10px;align-items:center}
+.linger__mails a{font-family:"EB Garamond",Georgia,serif;font-size:clamp(1.15rem,2.2vw,1.5rem);color:#fff;border-bottom:1px solid rgba(255,255,255,.35);padding-bottom:3px;transition:border-color .25s,color .25s}
+.linger__mails a:hover{border-color:var(--coral);color:var(--coral)}
+.linger__loc{margin-top:26px;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.pframe{position:absolute;z-index:1;background:#fff;padding:10px;border:6px solid #b9965d;outline:1px solid #8a6d3f;box-shadow:0 18px 42px -18px rgba(0,0,0,.65),inset 0 0 0 1px #d9c08a;transform:rotate(var(--tilt,0deg));transition:transform .5s}
+.pframe img{display:block;width:100%;height:100%;object-fit:cover}
+.pframe:hover{transform:rotate(var(--tilt,0deg)) scale(1.04);z-index:2}
+.pf-1{top:9%;left:5%;width:190px;height:150px;--tilt:-2deg}
+.pf-2{top:6%;right:12%;width:160px;height:210px;--tilt:1.5deg}
+.pf-3{bottom:12%;left:10%;width:150px;height:190px;--tilt:1deg}
+.pf-4{bottom:9%;right:6%;width:230px;height:150px;--tilt:-1.5deg}
+.pf-5{top:42%;left:2%;width:120px;height:150px;--tilt:2deg}
+.credit{margin-top:14px}
+.credit a{font-size:.68rem;letter-spacing:.08em;color:rgba(255,255,255,.34);transition:color .25s}
+.credit a:hover{color:rgba(255,255,255,.6)}
+@media (max-width:900px){
+  .pf-1,.pf-3,.pf-5{display:none}
+  .pf-2{top:4%;right:4%;width:110px;height:140px}
+  .pf-4{bottom:5%;right:4%;width:150px;height:100px}
+  .linger{padding:120px 22px 80px}
+}
